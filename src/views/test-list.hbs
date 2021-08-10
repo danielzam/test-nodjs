@@ -1,0 +1,41 @@
+<h1><a class="btn btn-success" href="/"><i class="fa fa-plus"></i> Nuevo User</a></h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Acciones</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">DNI</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Fecha Nacimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each users}}
+    <tr>
+    <th>{{ @index }}</th>
+      <td>
+        <a href="/test/edit/{{_id}}"><i class="fa fa-edit fa-lg"></i></a> &nbsp;
+        <form action="/test/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="btn btn-danger" type="submit"><i class="fa fa-close"></i></button>
+        </form>
+      </td>
+      <td>{{ name }}</td>
+      <td>{{ lastname }}</td>
+      <td>{{ phone }}</td>
+      <td>{{ dni }}</td>
+      <td>{{ email }}</td>
+      <td>{{ date }}</td>
+    </tr>
+  {{else}}
+        <tr>
+          <th colspan="7" class="text-center">
+            <a href="/" class="btn btn-success">Create one User</a>
+          </th>
+        </tr>
+  {{/each}}
+  </tbody>
+</table>

@@ -11,11 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93fe3d36-c97a-46c9-a527-b38bbabcaf41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/test-add.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/partials/messages.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test-edit.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/test-list.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/test-add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test-add.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +50,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nodjs-server\src\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nodjs-server\src\views" />
       <recent name="C:\xampp\htdocs\nodjs-server\src\views\layouts" />
     </key>
   </component>
@@ -62,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627187087487</updated>
-      <workItem from="1627187088722" duration="6264000" />
+      <workItem from="1627187088722" duration="27783000" />
     </task>
     <servers />
   </component>

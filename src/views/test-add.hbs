@@ -1,3 +1,9 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{ text }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
 
     <form action="/test/new" method="POST">
       <div class="mb-3">
@@ -24,5 +30,10 @@
                     <label class="form-label">Fecha Nacimiento</label>
                     <input type="date" class="form-control" name="date">
             </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <div class="row text-center">
+        <div class="col-md-12">
+                  <a href="/test/list" class="btn btn-warning">Ver Lista</a>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+      </div>
     </form>

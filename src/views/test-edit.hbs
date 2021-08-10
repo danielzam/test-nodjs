@@ -1,0 +1,31 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{ text }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
+
+    <form action="/test/edit-user/{{user._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="name" value="{{ user.name }}" autofocus>
+      </div>
+      <div class="mb-3">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" name="lastname" value="{{ user.lastname }}">
+                  </div>
+            <div class="mb-3">
+                    <label class="form-label">Telefono</label>
+                    <input type="number" class="form-control" name="phone" value="{{ user.phone }}">
+            </div>
+            <div class="mb-3">
+                          <label class="form-label">DNI</label>
+                          <input type="number" class="form-control" name="dni" value="{{ user.dni }}">
+                  </div>
+      <div class="mb-3">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control" name="email" value="{{ user.email }}">
+      </div>
+      <button type="submit" class="btn btn-primary">Editar</button>
+    </form>
